@@ -1,0 +1,28 @@
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main() {
+    list<int> lista;
+    int numero;
+
+
+    cout << "Digite 5 numeros inteiros:\n";
+    for (int i = 0; i < 5; i++) {
+        cin >> numero;
+        lista.push_back(numero);
+    }
+
+    int soma = 0;
+    int multiplicacao = 1;
+
+    for (int elemento : lista) {
+        soma += elemento;
+        multiplicacao *= elemento;
+    }
+
+    cout << "Soma: " << soma << endl;
+    cout << "Multiplicacao: " << multiplicacao << endl;
+
+    return 0;
+}

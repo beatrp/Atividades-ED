@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int soma = 0;
+
+    cout << "Digite um numero que seja inteiro e positivo: ";
+    cin >> n;
+
+    if (n > 0) {
+        for (int i = 1; i <= n; i++) {
+            soma += i;
+        }
+
+        cout << "A soma dos numeros inteiros positivos ate " 
+             << n << " seria de: " << soma << endl;
+    } else {
+        cout << "Por favor, digite um numero inteiro e positivo." << endl;
+    }
+
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numero;
+    cout << "Digite um numero inteiro positivo: ";
+    cin >> numero;
+
+    int contador = 0;
+    int temp = numero;
+
+    while (temp > 0) {
+        temp = temp / 10;
+        contador++;
+    }
+
+    cout << "O numero " << numero << " possui " << contador << " digitos." << endl;
+
+    return 0;
+}

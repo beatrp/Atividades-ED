@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int somaVetor(int vetor[], int tamanho) {
+    int soma = 0;
+
+    for (int i = 0; i < tamanho; i++) {
+        soma += vetor[i];
+    }
+
+    return soma;
+}
+
+int main() {
+    int tamanho;
+
+    cout << "Digite o tamanho do vetor: ";
+    cin >> tamanho;
+
+    int vetor[tamanho];
+
+    for (int i = 0; i < tamanho; i++) {
+        cout << "Digite o elemento " << i << ": ";
+        cin >> vetor[i];
+    }
+
+    int resultado = somaVetor(vetor, tamanho);
+
+    cout << "A soma dos elementos do vetor é: " << resultado << endl;
+
+    return 0;
+}

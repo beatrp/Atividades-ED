@@ -1,0 +1,36 @@
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main() {
+    list<string> lista;
+    list<string> listaInvertida;
+
+    
+    lista.push_back("s");
+    lista.push_back("n");
+    lista.push_back("u");
+    lista.push_back("p");
+    lista.push_back("i");
+
+    
+    for (string letra : lista) {
+        listaInvertida.push_front(letra);
+    }
+
+    
+    cout << "Lista original: ";
+    for (string letra : lista) {
+        cout << letra << " ";
+    }
+    cout << endl;
+
+    
+    cout << "Lista invertida: ";
+    for (string letra : listaInvertida) {
+        cout << letra << " ";
+    }
+    cout << endl;
+
+    return 0;
+}

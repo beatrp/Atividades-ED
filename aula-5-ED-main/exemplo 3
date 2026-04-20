@@ -1,0 +1,19 @@
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main() {
+	list<float> numList;
+	numList.push_front(10.1);
+	numList.push_front(20.2);
+	numList.push_front(30.3);
+	
+	for (auto j: numList) {
+		cout << j << " ";
+
+	}
+	
+	cout << endl;
+	return 0;
+	
+}

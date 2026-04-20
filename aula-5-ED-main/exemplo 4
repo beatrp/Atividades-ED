@@ -1,0 +1,18 @@
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main ()
+{
+	list<float> numList = {10.1, 20.2, 30.3};
+	
+	numList.remove(10.1);
+	
+	for (auto j: numList ){
+	
+		cout << j << " ";
+	
+	}
+	
+	return 0;
+}

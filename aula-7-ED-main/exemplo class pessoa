@@ -1,0 +1,50 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Pessoa {
+private:
+	string nome;
+	int idade;
+	string endereco;
+	string profissao;
+
+public:
+	//construtor de classe Pessoa
+	Pessoa (string nome, int idade, string endereco, string profissao) {
+		this ->nome = nome;
+		this ->idade = idade;
+		this ->endereco = endereco;
+		this ->profissao = profissao;
+		 
+	}
+	// metodos para definir e obter o nome
+	void setNome (string novoNome) {
+		nome = novoNome;
+	}
+	
+	string getNome (){
+		return nome;
+	}
+	//metodo para definir e obter a idade
+	void setIdade (int novaIdade) {
+		idade = novaIdade;
+	}
+	string getEndereco (){
+		return endereco;
+	}
+	//metodo para definir e obter a profisaao
+	void setProfissao(string novaProfissao){
+		profissao = novaProfissao;
+	}
+	string getProfissao (){
+		return profissao;
+	}
+	//metodo para exibir informacoes de pessoa
+	void mostrarInfo (){
+		cout << " " << endl;
+		cout << "nome: " << endl;
+		cout << "idade: " << endl;
+		cout << "endereco: " << endl;
+		cout << "profissao: " << endl;
+	}
+};

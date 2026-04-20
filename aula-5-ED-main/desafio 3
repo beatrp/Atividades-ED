@@ -1,0 +1,31 @@
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main() {
+    list<int> A, B, C;
+
+    A.push_back(1);
+    A.push_back(3);
+    A.push_back(5);
+    A.push_back(7);
+    A.push_back(9);
+
+    B.push_back(2);
+    B.push_back(4);
+    B.push_back(6);
+    B.push_back(8);
+    B.push_back(10);
+
+    for (int x : A) C.push_back(x);
+    for (int x : B) C.push_back(x);
+
+    C.sort();
+
+    cout << "Lista C ordenada: ";
+    for (int x : C) {
+        cout << x << " ";
+    }
+
+    return 0;
+} 

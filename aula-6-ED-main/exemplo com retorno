@@ -1,0 +1,19 @@
+#include <iostream>
+ using namespace std;
+ 
+ //Declaracao da funcao
+ int soma(int a, int b) {
+ 	int resultado = a + b;
+ 	return resultado;
+ }
+ 
+ int main() {
+ 	//Chamada da funcao
+ 	int x = 5;
+ 	int y = 3;
+ 	int resultadoSoma = soma(x, y);
+	 
+	 cout << "A soma de " << x << " e " << y << " e " << resultadoSoma << endl;
+	 
+	 return 0;
+ }

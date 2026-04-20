@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main () {
+    // Criando uma instancia da classe Carro
+    Carro carro1("Nome", "Marca", "Cor", 0);
+
+    // Mostrar informacoes do carro
+    carro1.mostrarInfo();
+
+    // Mudar o nome, marca, cor e km do carro
+    carro1.setNome("Onix");
+    carro1.setMarca("Chevrolet");
+    carro1.setCor("Preto");
+    carro1.setKmRodado(0);
+
+    carro1.mostrarInfo();
+
+    return 0;
+}
