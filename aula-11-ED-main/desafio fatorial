@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+
+int fatorial_recursivo(int n) {
+    
+    if (n <= 1) {
+        return 1;
+    }
+    
+    else {
+        return n * fatorial_recursivo(n - 1);
+    }
+}
+
+int main() {
+    int numero = 5;
+    
+  
+    cout << "O fatorial de " << numero << " e: " << fatorial_recursivo(numero) << endl;
+    
+ 
+    return 0;
+}
